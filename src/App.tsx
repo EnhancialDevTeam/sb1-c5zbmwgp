@@ -67,7 +67,7 @@ function App() {
         
         <div className="relative z-10 h-full flex flex-col">
           <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-            <nav className="flex justify-between items-center py-6">
+            <nav className="flex justify-between items-center py-8">
               <div className="h-6 sm:h-8">
                 <svg viewBox="0 0 500 44.76" className="h-full">
                   <path
@@ -98,14 +98,14 @@ function App() {
             )}
           </div>
 
-          <div className="flex-1 flex items-center py-8 md:py-0">
+          <div className="flex-1 flex items-center py-12 md:py-16">
             <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-8">
-                <div className="flex flex-col justify-center">
-                  <h1 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-light mb-6 tracking-wider">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
+                <div className="flex flex-col justify-center pt-8 md:pt-12">
+                  <h1 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-light mb-8 tracking-wider">
                     Redefine Luxury with Sustainability
                   </h1>
-                  <p className="text-lg sm:text-xl lg:text-2xl font-light mb-8 md:mb-12 max-w-3xl tracking-wide text-brand-grey">
+                  <p className="text-lg sm:text-xl lg:text-2xl font-light mb-10 md:mb-14 max-w-3xl tracking-wide text-brand-grey">
                     Win a bespoke eco-conscious getaway, crafted exclusively for those who value sophistication and the planet
                   </p>
                   
@@ -127,7 +127,7 @@ function App() {
                       </button>
                     </div>
                     
-                    <div className="mt-4 flex items-start gap-2">
+                    <div className="mt-6">
                       <input
                         type="checkbox"
                         id="terms"
@@ -146,8 +146,8 @@ function App() {
                   </form>
                 </div>
                 
-                <div className="relative flex items-center justify-center order-first lg:order-last">
-                  <div className="relative w-full h-full flex flex-col items-center justify-center gap-4">
+                <div className="relative flex items-center justify-center order-first lg:order-last pt-8 md:pt-12">
+                  <div className="relative w-full h-full flex flex-col items-center justify-center gap-8">
                     <div 
                       className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg transform -rotate-6 hover:scale-105 transition-all duration-300 cursor-pointer"
                       onMouseEnter={() => setHoveredImage("https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80")}
