@@ -7,7 +7,6 @@ function App() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
     console.log('Form submitted:', { email, agreed });
   };
 
@@ -24,7 +23,14 @@ function App() {
         />
         
         <nav className="relative z-10 flex justify-between items-center px-8 py-6">
-          <div className="text-2xl font-light tracking-wider">BLOOMING HAUS</div>
+          <div className="h-8">
+            <svg viewBox="0 0 500 44.76" className="h-full">
+              <path
+                fill="currentColor"
+                d="M0,42.99l4.38-3.41V4.32L0,.91h20.3c9.16,0,15.98,4.32,15.98,10.01,0,4.89-4.49,8.53-11.89,9.61v.63c8.08,1.19,13.36,5.17,13.42,10.58.06,6.77-7.39,11.26-17.91,11.26H0ZM11.49,20.36h8.47c5.29,0,8.99-3.87,8.99-9.44,0-5.23-3.64-8.81-9.1-8.81h-8.36v18.25ZM11.49,41.8h8.08c7.22,0,10.75-5.06,10.75-10.18s-3.53-10.12-10.69-10.12h-8.13v20.3Z M39.83,42.99l4.38-3.24V4.04l-4.38-3.13h16.66l-5.17,3.13v37.65h15.3l8.7-13.88-1.65,14.1v1.08h-33.84Z M78.1,21.61c0-11.89,9.78-21.61,21.44-21.61s21.5,9.72,21.5,21.61-9.89,22.06-21.5,22.06-21.44-9.9-21.44-22.06ZM113.3,21.61c0-12.57-5.17-20.36-13.76-20.36s-13.76,7.62-13.76,20.36,5.23,20.81,13.76,20.81,13.76-7.68,13.76-20.81Z M124.39,21.61c0-11.89,9.78-21.61,21.44-21.61s21.5,9.72,21.5,21.61-9.9,22.06-21.5,22.06-21.44-9.9-21.44-22.06ZM159.6,21.61c0-12.57-5.17-20.36-13.76-20.36s-13.76,7.62-13.76,20.36,5.23,20.81,13.76,20.81,13.76-7.68,13.76-20.81Z M194.1,44.76l-18.03-37.82h-.57v32.81l6.03,3.24h-13.48l6.03-3.24V4.32l-4.66-3.41h11.72l15.64,32.7h.8L211.56.91h11.2l-4.44,3.13v35.83l4.44,3.13h-15.92l4.38-3.13V6.94h-.68l-16.43,37.82Z M229.81,39.86V4.04l-4.38-3.13h15.92l-4.44,3.13v35.83l4.44,3.13h-15.92l4.38-3.13Z M283.39,44.76l-31.51-36.79h-.68v31.62l6.03,3.41h-13.48l6.03-3.41V5.46l-4.44-4.38,9.67-.8,26.16,30.6h.74V4.32l-6.03-3.41h13.53l-6.03,3.41v40.43Z M330.16,43.9l-4.55-4.44c-3.58,2.62-8.7,4.21-13.65,4.21-12.11,0-22.12-9.9-22.12-22.06S300.02,0,312.59,0c5.12,0,10.69,1.02,13.88,2.62v.91l1.54,11.2c-4.55-8.87-8.7-13.53-15.52-13.48-8.99,0-14.9,8.3-14.9,20.36s5.8,20.81,14.56,20.81c4.89,0,9.27-3.07,11.03-8.19v-11.43h-9.44v-1.19h20.81l-4.38,3.36v18.94Z M346.25,42.99l5.23-2.45,8.87-36.79-3.87-2.45h14.16l-6.31,2.45-3.87,16.04h22.18l3.81-16.04-5.35-2.45h14.56l-5.23,2.45-8.87,36.79,3.87,2.45h-14.1l6.26-2.45,4.78-19.73h-22.12l-4.78,19.73,5.35,2.45h-14.56Z M387.95,42.99l5.4-2.5,27.24-35.94-.57-3.13,4.55-.74v39.86l5.52,2.45h-15.92l6.54-2.45v-12.57h-16.43l-9.38,12.57,5.63,2.45h-12.57ZM405.07,26.96h15.64V6.77h-.51l-15.13,20.19Z M441.05,4.04l-3.87-2.73h13.02l-5.17,2.73-6.08,25.48c-1.65,6.71,2.62,11.71,9.95,11.71,6.88,0,13.25-4.89,14.79-11.49l6.14-25.7-4.09-2.73h11.2l-5.69,2.73-6.2,25.93c-1.88,7.85-9.5,13.71-17.8,13.71-8.93,0-14.33-5.57-12.57-13.08l6.37-26.56Z M471.11,39.98l.97-9.95c.74,8.02,4.78,12.57,11.09,12.57,5.12.06,8.64-3.47,8.64-8.7,0-8.7-14.1-12.28-14.1-22.01,0-6.71,5.52-11.32,12.51-11.32,3.41,0,7.11,1.08,9.78,2.73l-.23.97-.63,9.44c-1.19-8.13-4.55-12.06-9.61-12.06s-8.59,3.53-8.59,8.42c0,8.64,14.27,12.28,14.27,22.35,0,6.65-5.35,11.37-13.08,11.26-4.21-.06-8.59-1.14-11.2-2.79l.17-.91Z"
+              />
+            </svg>
+          </div>
           <div className="flex gap-8 text-sm tracking-wider">
             <a href="#about" className="hover:text-gold-400 transition-colors">ABOUT</a>
             <a href="#experience" className="hover:text-gold-400 transition-colors">EXPERIENCE</a>
@@ -32,46 +38,74 @@ function App() {
           </div>
         </nav>
 
-        <div className="relative z-10 flex flex-col items-center justify-center h-[calc(100vh-100px)] text-center px-4">
-          <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-wider">
-            Redefine Luxury with Sustainability
-          </h1>
-          <p className="text-xl md:text-2xl font-light mb-12 max-w-3xl mx-auto tracking-wide text-gray-300">
-            Win a bespoke eco-conscious getaway, crafted exclusively for those who value sophistication and the planet
-          </p>
-          
-          <form onSubmit={handleSubmit} className="w-full max-w-md">
-            <div className="relative">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
-                className="w-full px-6 py-4 bg-black/30 backdrop-blur-sm border border-gray-500 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-gold-400 transition-colors"
-                required
-              />
-              <button
-                type="submit"
-                className="absolute right-2 top-2 px-6 py-2 bg-[#C4A862] hover:bg-[#B39752] text-black rounded-full transition-colors"
-              >
-                Enter Now
-              </button>
-            </div>
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 h-[calc(100vh-100px)] px-8 max-w-6xl mx-auto">
+          <div className="flex flex-col justify-center">
+            <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-wider">
+              Redefine Luxury with Sustainability
+            </h1>
+            <p className="text-xl md:text-2xl font-light mb-12 max-w-3xl tracking-wide text-gray-300">
+              Win a bespoke eco-conscious getaway, crafted exclusively for those who value sophistication and the planet
+            </p>
             
-            <div className="mt-4 flex items-center justify-center gap-2">
-              <input
-                type="checkbox"
-                id="terms"
-                checked={agreed}
-                onChange={(e) => setAgreed(e.target.checked)}
-                className="h-4 w-4 border-gray-500 rounded focus:ring-[#C4A862]"
-                required
-              />
-              <label htmlFor="terms" className="text-sm text-gray-300">
-                I agree to the terms and conditions
-              </label>
+            <form onSubmit={handleSubmit} className="w-full max-w-md">
+              <div className="relative">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  className="w-full px-6 py-4 bg-black/30 backdrop-blur-sm border border-gray-500 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-gold-400 transition-colors"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="absolute right-2 top-2 px-6 py-2 bg-[#C4A862] hover:bg-[#B39752] text-black rounded-full transition-colors"
+                >
+                  Enter Now
+                </button>
+              </div>
+              
+              <div className="mt-4 flex items-center justify-center gap-2">
+                <input
+                  type="checkbox"
+                  id="terms"
+                  checked={agreed}
+                  onChange={(e) => setAgreed(e.target.checked)}
+                  className="h-4 w-4 border-gray-500 rounded focus:ring-[#C4A862]"
+                  required
+                />
+                <label htmlFor="terms" className="text-sm text-gray-300">
+                  I agree to the terms and conditions
+                </label>
+              </div>
+            </form>
+          </div>
+          
+          <div className="relative flex items-center justify-center">
+            <div className="relative w-full h-full flex flex-col items-center justify-center gap-4">
+              <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg transform -rotate-6 hover:scale-105 transition-transform duration-300">
+                <img
+                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                  alt="Luxury Destination 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg transform translate-x-20 animate-float-slow hover:scale-105 transition-transform duration-300">
+                <img
+                  src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                  alt="Luxury Destination 2"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg transform -translate-x-20 -translate-y-8 hover:scale-105 transition-transform duration-300">
+                <img
+                  src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                  alt="Luxury Destination 3"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
-          </form>
+          </div>
         </div>
       </header>
 
