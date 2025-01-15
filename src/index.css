@@ -8,7 +8,7 @@
   }
   
   body {
-    @apply bg-[#1a1a1a] text-white font-cormorant;
+    @apply bg-brand-black text-brand-offwhite font-cormorant;
   }
 
   h1, h2, h3 {
@@ -22,7 +22,7 @@
 
 @layer utilities {
   .text-gold-400 {
-    color: #C4A862;
+    color: #ac925e;
   }
 
   @keyframes float {
