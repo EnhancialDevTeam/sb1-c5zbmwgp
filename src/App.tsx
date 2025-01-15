@@ -85,18 +85,14 @@ function App() {
               </button>
 
               <div className="hidden md:flex gap-8 text-sm tracking-wider">
-                <a href="#about" className="text-brand-grey hover:text-brand-gold transition-colors">ABOUT</a>
-                <a href="#experience" className="text-brand-grey hover:text-brand-gold transition-colors">EXPERIENCE</a>
-                <a href="#terms" className="text-brand-grey hover:text-brand-gold transition-colors">TERMS</a>
+                {/* Navigation items removed as requested */}
               </div>
             </nav>
 
             {mobileMenuOpen && (
               <div className="md:hidden absolute inset-x-0 top-20 bg-brand-black/95 backdrop-blur-sm py-4">
                 <div className="flex flex-col items-center gap-4 text-sm tracking-wider">
-                  <a href="#about" className="text-brand-grey hover:text-brand-gold transition-colors py-2">ABOUT</a>
-                  <a href="#experience" className="text-brand-grey hover:text-brand-gold transition-colors py-2">EXPERIENCE</a>
-                  <a href="#terms" className="text-brand-grey hover:text-brand-gold transition-colors py-2">TERMS</a>
+                  {/* Mobile navigation items removed as requested */}
                 </div>
               </div>
             )}
@@ -106,7 +102,7 @@ function App() {
             <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-8">
                 <div className="flex flex-col justify-center">
-                  <h1 className="font-cinzel text-4xl sm:text-5xl lg:text-7xl font-light mb-6 tracking-wider">
+                  <h1 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-light mb-6 tracking-wider">
                     Redefine Luxury with Sustainability
                   </h1>
                   <p className="text-lg sm:text-xl lg:text-2xl font-light mb-8 md:mb-12 max-w-3xl tracking-wide text-brand-grey">
